@@ -23,7 +23,7 @@ API documentation and testing are handled using **Swagger**.
 
 ## 📂 Project Structure
 The app is organized into logical packages to ensure **modularity** and **maintainability**:
-
+``` 
 📦 com.example.rickandmortyapp
 ├── 📂 components          # Reusable UI components
 ├── 📂 data
@@ -33,7 +33,7 @@ The app is organized into logical packages to ensure **modularity** and **mainta
 ├── 📂 navigation         # Navigation logic
 ├── 📂 screens            # Main screens of the application
 ├── 📂 viewmodels         # ViewModel classes for data handling
-
+``` 
 
 ---
 
@@ -68,10 +68,10 @@ The app is organized into logical packages to ensure **modularity** and **mainta
 
 ## 📌 Installation & Setup
 1️⃣ **Clone the repository:**
-   \`\`\`sh
+   ``` 
    git clone https://github.com/niaa004/rick-and-morty-app.git
    cd rick-and-morty-app
-   \`\`\`
+   ``` 
 
 2️⃣ **Open the project in Android Studio**
 
@@ -81,10 +81,10 @@ The app is organized into logical packages to ensure **modularity** and **mainta
 
 ## 📈 Future Enhancements
 Potential improvements include:
-✅ **Implementing a search feature** to filter characters by name.  
-✅ **Enhancing UI/UX** with more sophisticated animations.  
-✅ **Expanding API caching** to improve offline support.  
-✅ **Improving error and network handling** for a better user experience.  
+**Implementing a search feature** to filter characters by name.  
+**Enhancing UI/UX** with more sophisticated animations.  
+**Expanding API caching** to improve offline support.  
+**Improving error and network handling** for a better user experience.  
 
 ---
 
@@ -102,4 +102,4 @@ The code is structured for **scalability**, and the **MVVM architecture** ensure
 This is a **practical example of API integration, local data storage, and performance optimization**,  
 with caching and **Swagger API documentation** for professional-grade development.  
 
-✅ **If you're interested in the code or want to contribute, check out the GitHub repository!** 🚀
+**If you're interested in the code or want to contribute, check out the GitHub repository!** 🚀
