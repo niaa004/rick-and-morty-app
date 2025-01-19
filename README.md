@@ -1,100 +1,102 @@
 # Rick and Morty App
 
-## 📌 Introduksjon
-Denne applikasjonen er en Android-app utviklet i **Kotlin**, som henter data fra **Rick and Morty API**.
-Prosjektet er bygget med **Jetpack Compose, Room Database og Retrofit**, og følger **MVVM-arkitektur** for å sikre skalerbarhet og god separasjon av ansvar.
+## 📌 Introduction
+This is an Android application developed in **Kotlin**, which fetches data from the **Rick and Morty API**.  
+The project is built with **Jetpack Compose, Room Database, and Retrofit**, following the **MVVM architecture** to ensure scalability and clear separation of concerns.
 
 ---
 
-## 🛠 Teknologier og rammeverk
-- **Språk:** Kotlin
+## 🛠 Technologies & Frameworks
+- **Language:** Kotlin
 - **UI:** Jetpack Compose
-- **Arkitektur:** MVVM (Model-View-ViewModel)
-- **Databehandling:** Room Database
-- **API-integrasjon:** Retrofit
-- **State management:** ViewModel & LiveData
-- **Bildehåndtering:** Coil
-- **Navigasjon:** Navigation Component
+- **Architecture:** MVVM (Model-View-ViewModel)
+- **Data Handling:** Room Database
+- **API Integration:** Retrofit
+- **State Management:** ViewModel & LiveData
+- **Image Loading:** Coil
+- **Navigation:** Navigation Component
 
 ---
 
-## 📂 Prosjektstruktur
-Applikasjonen er organisert i logiske pakker for å sikre modularitet og vedlikeholdbarhet:
+## 📂 Project Structure
+The app is organized into logical packages to ensure **modularity** and **maintainability**:
 
 \`\`\`
 📦 com.example.rickandmortyapp
- ┣ 📂 components          # Gjenbrukbare UI-komponenter
+ ┣ 📂 components          # Reusable UI components
  ┣ 📂 data
- ┃ ┣ 📂 dataclasses       # Datamodeller for API- og databaseobjekter
- ┃ ┣ 📂 retrofit          # Retrofit-klasser for API-integrasjon
- ┃ ┣ 📂 room              # Room Database-klasser og DAO
- ┣ 📂 navigation          # Navigasjonslogikk
- ┣ 📂 screens             # Hovedskjermer i applikasjonen
- ┣ 📂 viewmodels          # ViewModel-klasser for databehandling
+ ┃ ┣ 📂 dataclasses       # Data models for API & database objects
+ ┃ ┣ 📂 retrofit          # Retrofit classes for API integration
+ ┃ ┣ 📂 room              # Room Database classes & DAO
+ ┣ 📂 navigation          # Navigation logic
+ ┣ 📂 screens             # Main screens of the application
+ ┣ 📂 viewmodels          # ViewModel classes for data handling
 \`\`\`
 
 ---
 
-## 📌 Funksjonalitet
-### **1️⃣ Karakterliste (Character List Screen)**
-- Henter og viser en liste med karakterer fra API-et.
-- Implementert paginering for smidig navigering mellom sider.
+## 📌 Features
+### **1️⃣ Character List Screen**
+- Fetches and displays a list of characters from the API.
+- Implemented pagination for smooth navigation between pages.
 
-### **2️⃣ Opprett karakter (Create Character Screen)**
-- Lar brukeren opprette egendefinerte karakterer.
-- Innebygget validering for å sikre gyldig input.
-- Data lagres i en lokal Room Database.
+### **2️⃣ Create Character Screen**
+- Allows users to create custom characters.
+- Built-in validation to ensure valid input.
+- Saves data in a local Room Database.
 
-### **3️⃣ Lagrede karakterer (Saved Characters Screen)**
-- Viser en liste over karakterer som brukeren har opprettet.
-- Data hentes fra lokal database.
+### **3️⃣ Saved Characters Screen**
+- Displays a list of user-created characters.
+- Data is retrieved from the local database.
 
-### **4️⃣ Tilfeldig karakter (Random Character Screen)**
-- Genererer en tilfeldig karakter fra API-et.
-- Implementert caching for raskere lasting.
-
----
-
-## 🛠 Implementasjonsdetaljer
-- **MVVM-arkitektur** sikrer at UI-komponenter kun håndterer visning, mens ViewModels håndterer dataflyt og logikk.
-- **Retrofit** brukes for API-kall, med en egen repository-lag for håndtering av nettverksforespørsler.
-- **Room Database** sørger for at brukerens data lagres lokalt, og kan hentes opp selv uten internettforbindelse.
-- **LazyColumn** brukes for effektiv rendering av store datasett i lister.
+### **4️⃣ Random Character Screen**
+- Generates a random character from the API.
+- Implements caching for faster loading.
 
 ---
 
-## 📌 Installasjon og kjøring
-1️⃣ **Klon repoet:**
+## 🛠 Implementation Details
+- **MVVM architecture** ensures that UI components handle only rendering, while ViewModels manage data flow and logic.
+- **Retrofit** is used for API calls, with a separate repository layer handling network requests.
+- **Room Database** ensures that user data is stored locally and remains accessible offline.
+- **LazyColumn** is used for efficient rendering of large datasets in lists.
+
+---
+
+## 📌 Installation & Setup
+1️⃣ **Clone the repository:**
    \`\`\`sh
    git clone https://github.com/niaa004/rick-and-morty-app.git
    cd rick-and-morty-app
    \`\`\`
-2️⃣ **Åpne i Android Studio**
-3️⃣ **Bygg og kjør appen på en emulator eller fysisk enhet**
+
+2️⃣ **Open the project in Android Studio**
+
+3️⃣ **Build and run the app on an emulator or physical device**
 
 ---
 
-## 📈 Videre utvikling
-Potensielle forbedringer inkluderer:
-✅ **Implementere et søkefelt** for å filtrere karakterer basert på navn.
-✅ **Forbedre UI/UX** med mer sofistikerte animasjoner.
-✅ **Legge til caching av API-respons** for bedre ytelse.
-✅ **Forbedret feil- og nettverkshåndtering** for bedre brukeropplevelse.
+## 📈 Future Enhancements
+Possible improvements include:
+✅ **Implementing a search feature** to filter characters by name.  
+✅ **Enhancing UI/UX** with more sophisticated animations.  
+✅ **Adding API response caching** for better performance.  
+✅ **Improving error and network handling** for a better user experience.  
 
 ---
 
-## 📜 Lisens og kilder
-MIT License © Nicolai Aalberg
-- Data er hentet fra [Rick and Morty API](https://rickandmortyapi.com/documentation).
+## 📜 License & References
+MIT License © Nicolai Aalberg  
+- Data is retrieved from [Rick and Morty API](https://rickandmortyapi.com/documentation).
 
 ---
 
-## 💡 Oppsummering
-Dette prosjektet demonstrerer **moderne Android-utvikling** med **Jetpack Compose, Room og Retrofit**.
-Koden er strukturert for skalerbarhet, og implementasjonen av **MVVM-arkitektur** sikrer god separasjon av ansvar.
+## 💡 Summary
+This project demonstrates **modern Android development** using **Jetpack Compose, Room, and Retrofit**.  
+The code is structured for **scalability**, and the **MVVM architecture** ensures clear separation of concerns.  
 
-Dette er et **praktisk eksempel på API-integrasjon og lokal datalagring**, og kan videreutvikles med nye funksjoner og optimaliseringer.
+This is a **practical example of API integration and local data storage**, and it can be further improved with new features and optimizations.
 
-✅ **Dersom du ønsker å se mer av koden eller bidra, besøk GitHub-repoet!**
+✅ **If you're interested in the code or want to contribute, check out the GitHub repository!** 🚀
 
 ---
