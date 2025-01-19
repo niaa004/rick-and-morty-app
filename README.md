@@ -43,20 +43,20 @@ The app is organized into logical packages to ensure **modularity** and **mainta
 ---
 
 ## 📌 Features
-### Character List Screen**
+### Character List Screen
 - Fetches and displays a list of characters from the API.
 - Implements **pagination** for smooth navigation between pages.
 
-### Create Character Screen**
+### Create Character Screen
 - Allows users to create **custom characters**.
 - Built-in **validation** to ensure valid input.
 - Saves data in a local **Room Database**.
 
-### Saved Characters Screen**
+### Saved Characters Screen
 - Displays a list of **user-created characters**.
 - Data is **retrieved from the local database**.
 
-### Random Character Screen**
+### Random Character Screen
 - Generates a **random character** from the API.
 - Implements **caching** for faster loading.
 
