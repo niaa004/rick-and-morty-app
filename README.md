@@ -25,14 +25,19 @@ API documentation and testing are handled using **Swagger**.
 The app is organized into logical packages to ensure **modularity** and **maintainability**:
 ``` 
 📦 com.example.rickandmortyapp
-├── 📂 components          # Reusable UI components
-├── 📂 data
+├── 📂 components          # Reusable UI components (CharacterItem, UserCharacterItem)
+├── 📂 data                # Handles data operations
 │   ├── 📂 dataclasses     # Data models for API & database objects
-│   ├── 📂 retrofit       # Retrofit classes for API integration
-│   ├── 📂 room           # Room Database classes & DAO
-├── 📂 navigation         # Navigation logic
-├── 📂 screens            # Main screens of the application
-├── 📂 viewmodels         # ViewModel classes for data handling
+│   ├── 📂 retrofit        # Retrofit classes for API integration
+│   ├── 📂 room            # Room Database classes & DAO
+├── 📂 navigation          # Navigation logic (BottomNavigationBar, ScreenNavigation)
+├── 📂 screens             # Main screens of the application
+│   ├── 📂 characterlist   # Displays list of characters
+│   ├── 📂 createcharacter # Allows users to create characters
+│   ├── 📂 randomcharacter # Displays a random character
+│   ├── 📂 savedcharacter  # Shows user-saved characters
+├── 📂 ui/theme            # Theming and styles for the app
+├── MainActivity.kt        # Entry point of the application
 ``` 
 
 ---
