@@ -43,20 +43,20 @@ The app is organized into logical packages to ensure **modularity** and **mainta
 ---
 
 ## 📌 Features
-### **1️⃣ Character List Screen**
+### Character List Screen**
 - Fetches and displays a list of characters from the API.
 - Implements **pagination** for smooth navigation between pages.
 
-### **2️⃣ Create Character Screen**
+### Create Character Screen**
 - Allows users to create **custom characters**.
 - Built-in **validation** to ensure valid input.
 - Saves data in a local **Room Database**.
 
-### **3️⃣ Saved Characters Screen**
+### Saved Characters Screen**
 - Displays a list of **user-created characters**.
 - Data is **retrieved from the local database**.
 
-### **4️⃣ Random Character Screen**
+### Random Character Screen**
 - Generates a **random character** from the API.
 - Implements **caching** for faster loading.
 
@@ -72,15 +72,15 @@ The app is organized into logical packages to ensure **modularity** and **mainta
 ---
 
 ## 📌 Installation & Setup
-1️⃣ **Clone the repository:**
+**Clone the repository:**
    ``` 
    git clone https://github.com/niaa004/rick-and-morty-app.git
    cd rick-and-morty-app
    ``` 
 
-2️⃣ **Open the project in Android Studio**
+**Open the project in Android Studio**
 
-3️⃣ **Build and run the app on an emulator or physical device**
+**Build and run the app on an emulator or physical device**
 
 ---
 
@@ -93,7 +93,7 @@ Potential improvements include:
 
 ---
 
-## 📜 License & References
+##   License & References
 MIT License © Nicolai Aalberg  
 - Data is retrieved from [Rick and Morty API](https://rickandmortyapi.com/documentation).
 - API testing and documentation via **Swagger**.
