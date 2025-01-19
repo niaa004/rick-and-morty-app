@@ -24,17 +24,16 @@ API documentation and testing are handled using **Swagger**.
 ## 📂 Project Structure
 The app is organized into logical packages to ensure **modularity** and **maintainability**:
 
-\`\`\`
 📦 com.example.rickandmortyapp
- ┣ 📂 components          # Reusable UI components
- ┣ 📂 data
- ┃ ┣ 📂 dataclasses       # Data models for API & database objects
- ┃ ┣ 📂 retrofit          # Retrofit classes for API integration
- ┃ ┣ 📂 room              # Room Database classes & DAO
- ┣ 📂 navigation          # Navigation logic
- ┣ 📂 screens             # Main screens of the application
- ┣ 📂 viewmodels          # ViewModel classes for data handling
-\`\`\`
+├── 📂 components          # Reusable UI components
+├── 📂 data
+│   ├── 📂 dataclasses     # Data models for API & database objects
+│   ├── 📂 retrofit       # Retrofit classes for API integration
+│   ├── 📂 room           # Room Database classes & DAO
+├── 📂 navigation         # Navigation logic
+├── 📂 screens            # Main screens of the application
+├── 📂 viewmodels         # ViewModel classes for data handling
+
 
 ---
 
