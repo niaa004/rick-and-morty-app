@@ -1,9 +1,9 @@
 package com.example.rickandmortyapp.navigation
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Create
 import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -23,7 +23,7 @@ fun BottomNavigationBar(
     onItemSelected: (Int) -> Unit
 ) {
 
-    // Justerer fargene i navigasjonsmenyen
+    // Justify colours in the navigation-bar menu
     val itemColors = NavigationBarItemDefaults.colors(
         indicatorColor = Color(30, 30, 30),
         selectedIconColor = Color(250, 145, 70),
@@ -32,12 +32,13 @@ fun BottomNavigationBar(
         unselectedTextColor = Color(150, 100, 30)
     )
 
-    // Navigasjonsmeny for å bytte mellom skjermene
+    // Navigationmenu to swap through screens
     NavigationBar(
         containerColor = Color(0, 0, 0)
     ) {
         NavigationBarItem(
-            icon = { Icon(Icons.Default.List, contentDescription = "Characters") },
+            icon = { Icon(Icons.AutoMirrored.Filled.List
+                , contentDescription = "Characters") },
             label = { Text("Characters") },
             selected = selectedTabIndex == 0,
             onClick = {

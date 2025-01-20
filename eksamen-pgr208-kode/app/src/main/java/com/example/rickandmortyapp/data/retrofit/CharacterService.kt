@@ -7,14 +7,14 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-// API Interface for alle characterdata fra Rick and Morty API
+// API Interface for all character-data from Rick and Morty API
 interface CharacterService {
-    @GET("character/") // <- bestemmer siden som lastes
+    @GET("character/") // <- Chosen pages that loading up
     suspend fun loadAllCharacters(
         @Query("page") page : Int) : Response<CharacterList>
 
 
-    @GET("character/{id}") // <- Spesifikk character basert på ID
+    @GET("character/{id}") // <- Specifik character based on ID
     suspend fun loadCharacterById(
         @Path("id") id: Int)
     : Response<Character>

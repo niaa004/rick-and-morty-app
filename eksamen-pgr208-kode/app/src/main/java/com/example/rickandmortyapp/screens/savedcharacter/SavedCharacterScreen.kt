@@ -24,11 +24,11 @@ import com.example.rickandmortyapp.components.UserCharacterItem
 
 @Composable
 fun SavedCharacterScreen(viewModel: SavedCharacterViewModel) {
-    val characters by viewModel.characters.collectAsState() // <- saved characters fra viewModel
+    val characters by viewModel.characters.collectAsState() // <- saved characters from viewModel
 
     Column {
         Text(
-            text = "Saved Characters", // <- Overskrift
+            text = "Saved Characters", // <- Headline
             modifier = Modifier
                 .fillMaxWidth()
                 .background(Color.Black)
@@ -40,12 +40,12 @@ fun SavedCharacterScreen(viewModel: SavedCharacterViewModel) {
             textAlign = TextAlign.Center
         )
 
-        // Henter saved characters
+        // Pull saved characters
     LaunchedEffect(Unit) {
         viewModel.loadSavedCharacters()
     }
 
-        // Viser characters i en liste
+        // Show listed characters
     LazyColumn {
         items(characters) { character ->
             UserCharacterItem(character)

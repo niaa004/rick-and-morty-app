@@ -8,17 +8,17 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-// ViewModel for å hente tilfeldige characters fra APIet
+// ViewModel get random characters from API
 class RandomCharacterViewModel : ViewModel() {
     private val _randomCharacter = MutableStateFlow<Character?>(null)
     val randomCharacter = _randomCharacter.asStateFlow()
 
-    // Genererer tilfeldig ID innenfor character i APIet
+    // Genererer random ID by characters in API
     private fun getRandomCharacterId(min: Int = 1, max: Int = 826): Int {
         return (min..max).random()
     }
 
-    // Genererer tilfeldig character basert på ID
+    // Generates random characters sorted by ID
     fun loadRandomCharacter() {
         viewModelScope.launch {
             val randomId = getRandomCharacterId()

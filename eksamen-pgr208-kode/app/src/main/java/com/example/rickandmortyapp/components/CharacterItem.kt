@@ -19,7 +19,7 @@ fun CharacterItem(character: Character) {
         Text(text = "Origin: ${character.origin.name}")
         Text(text = "Location: ${character.location.name}")
 
-        // Bildet -> episoder av enkelte character
+        // Image -> episodes by one single character
         AsyncImage(
             model = character.image,
             contentDescription = "Image of: ${character.name}"

@@ -29,7 +29,7 @@ object CharacterRepository {
     private val _characterService = _retrofit.create(
         CharacterService::class.java)
 
-    // Henter characters fra APIet basert på side
+    // Gets characters from API based on page (Paginering)
     suspend fun loadAllCharacters(page: Int): List<Character> {
         try {
             val response = _characterService.loadAllCharacters(page)
@@ -46,7 +46,7 @@ object CharacterRepository {
         }
     }
 
-    // Henter en character basert på ID
+    // Gets a character based on ID
     suspend fun loadCharacterById(id: Int): Character? {
         return try {
             val response = _characterService.loadCharacterById(id)

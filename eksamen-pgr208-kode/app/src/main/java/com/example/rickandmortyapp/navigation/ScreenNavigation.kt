@@ -37,7 +37,7 @@ fun ScreenNavigation(
         Scaffold(
             modifier = Modifier.fillMaxSize(),
             bottomBar = {
-                BottomNavigationBar( // <- Navigasjonbaren nederst på skjermen
+                BottomNavigationBar( // <- Navigation-bar -> bottom screen
                     navController = navController,
                     selectedTabIndex = selectedTabIndex
                 ) { newIndex ->
@@ -50,7 +50,7 @@ fun ScreenNavigation(
                 startDestination = "character_list",
                 Modifier.padding(innerPadding)
             ) {
-                // Route navigering til de forskjellige skjermene
+                // Route navigation through screens
                 composable("character_list") {
                     CharacterListScreen(characterListViewModel)
                 }

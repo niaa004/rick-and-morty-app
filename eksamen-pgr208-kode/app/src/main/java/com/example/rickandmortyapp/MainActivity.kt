@@ -25,7 +25,7 @@ import com.example.rickandmortyapp.ui.theme.RickAndMortyAppTheme
 
 
 class MainActivity : ComponentActivity() {
-    // ViewModels - arkitektur
+    // ViewModels - Arcitecture
     private val characterListViewModel: CharacterListViewModel by viewModels()
     private val createCharacterViewModel: CreateCharacterViewModel by viewModels()
     private val savedCharacterViewModel : SavedCharacterViewModel by viewModels()
@@ -34,11 +34,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        UserCharacterRepository.initializeDatabase(applicationContext) // <- Initierer databasen
+        UserCharacterRepository.initializeDatabase(applicationContext) // <- Initialize database
 
         setContent {
             RickAndMortyAppTheme {
-                ScreenNavigation( // <- Navigasjon mellom skjermene
+                ScreenNavigation( // <- Navigation through screens
                     characterListViewModel = characterListViewModel,
                     createCharacterViewModel = createCharacterViewModel,
                     savedCharacterViewModel = savedCharacterViewModel,

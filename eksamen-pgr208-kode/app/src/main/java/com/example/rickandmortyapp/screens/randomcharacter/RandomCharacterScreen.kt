@@ -25,11 +25,11 @@ import com.example.rickandmortyapp.components.CharacterItem
 
 @Composable
 fun RandomCharacterScreen(viewModel: RandomCharacterViewModel) {
-    val randomCharacter by viewModel.randomCharacter.collectAsState() // <- saved characters fra viewModel
+    val randomCharacter by viewModel.randomCharacter.collectAsState() // <- saved characters from viewModel
 
     Column {
         Text(
-            text = "Get Random Character", // <- Overskrift
+            text = "Get Random Character", // <- Headline
             modifier = Modifier
                 .fillMaxWidth()
                 .background(Color.Black)
@@ -47,7 +47,7 @@ fun RandomCharacterScreen(viewModel: RandomCharacterViewModel) {
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-        Button(onClick = { viewModel.loadRandomCharacter() }, // <- Generer tilfeldig character
+        Button(onClick = { viewModel.loadRandomCharacter() }, // <- Generer random character
                 colors = ButtonDefaults.buttonColors(
                 containerColor = Color(250, 145, 70),
                 contentColor = Color(255, 255, 255)),
@@ -60,7 +60,7 @@ fun RandomCharacterScreen(viewModel: RandomCharacterViewModel) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        if (randomCharacter != null) { // <- viser random character, og teksten forsvinner
+        if (randomCharacter != null) { // <- Show random character, and text disapears
             CharacterItem(
                 character = randomCharacter!!)
         } else {

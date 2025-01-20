@@ -1,6 +1,6 @@
     package com.example.rickandmortyapp.data.dataclasses
 
-    data class Character( // <- Dataclass fra APIet
+    data class Character( // <- User Dataclass from the API
         val id: Int,
         val name: String,
         val status: String,
@@ -15,7 +15,7 @@
         val created: String
     )
 
-    data class CharacterLocation( // <- Dataclass fra APIet
+    data class CharacterLocation( // <- Dataclass from the API
         val name: String,
         val url: String
     )

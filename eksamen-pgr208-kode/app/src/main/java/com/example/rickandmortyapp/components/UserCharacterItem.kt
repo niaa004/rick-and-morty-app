@@ -5,7 +5,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import com.example.rickandmortyapp.data.dataclasses.UserCharacter
 
-// Viser informasjon om en enkelt character i databasen
+// Show info about one single character
 @Composable
 fun UserCharacterItem(character: UserCharacter) {
     Column {

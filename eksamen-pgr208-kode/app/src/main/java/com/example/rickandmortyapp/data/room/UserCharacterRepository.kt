@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.room.Room
 import com.example.rickandmortyapp.data.dataclasses.UserCharacter
 
-object UserCharacterRepository { // <- Singleton-class for Room-databasen
-    private lateinit var _rickAndMortyDatabase: RickAndMortyDatabase // <- database instans
+object UserCharacterRepository { // <- Singleton-class for Room-database
+    private lateinit var _rickAndMortyDatabase: RickAndMortyDatabase // <- database instance
     private val _userCharacterDao by lazy { _rickAndMortyDatabase.userCharacterDao() // <- DAO
     }
 
@@ -24,7 +24,7 @@ object UserCharacterRepository { // <- Singleton-class for Room-databasen
         return try {
             _userCharacterDao.insertUserCharacter(character)
         } catch (e: Exception) {
-            -1L // <- (-1) return dersom feil
+            -1L // <- (-1) return in case error
         }
     }
 
@@ -32,7 +32,7 @@ object UserCharacterRepository { // <- Singleton-class for Room-databasen
         return try {
             _userCharacterDao.getAllUserCharacters()
         } catch (e: Exception) {
-            emptyList() // <- (empty) return dersom feil
+            emptyList() // <- (empty) return if failing
         }
     }
 

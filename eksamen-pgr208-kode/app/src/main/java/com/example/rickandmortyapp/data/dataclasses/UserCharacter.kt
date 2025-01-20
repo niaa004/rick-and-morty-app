@@ -3,9 +3,9 @@ package com.example.rickandmortyapp.data.dataclasses
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity("user_character") // <- Dataclass av en character bruker har lagret i databasen
+@Entity("user_character") // <- Dataclass character user has saved in database
 data class UserCharacter(
-    @PrimaryKey(autoGenerate = true) // <- Automatisk generert PK = ID
+    @PrimaryKey(autoGenerate = true) // <- Automatic generated Primary Key (PK) = ID
     val id: Int = 0,
     val name: String,
     val status: String,

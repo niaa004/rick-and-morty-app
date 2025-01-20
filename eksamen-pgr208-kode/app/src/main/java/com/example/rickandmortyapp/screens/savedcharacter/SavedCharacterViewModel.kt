@@ -8,12 +8,12 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-// ViewModel som håndterer brukers lagret av nye characters
+// ViewModel handles saved characters by user
 class SavedCharacterViewModel : ViewModel() {
     private val _characters = MutableStateFlow<List<UserCharacter>>(emptyList())
     val characters: StateFlow<List<UserCharacter>> = _characters
 
-    // Laster alle characters som er lagret fra databasen
+    // Save all stored characters from database
     fun loadSavedCharacters() {
         viewModelScope.launch {
             _characters.value = UserCharacterRepository.getUserCharacters() // <- resultatet i StateFlow
