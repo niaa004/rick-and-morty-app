@@ -10,38 +10,6 @@ API Integration: Retrofit (Network Requests)
 API Documentation & Testing: Swagger / OpenAPI
 State Management: ViewModel & LiveData
 
-## Project Structure
-``` 
-📦 com.example.rickandmortyapp
-├── 📂 components          # Reusable UI components
-│   ├── CharacterItem.kt
-│   ├── UserCharacterItem.kt
-│
-├── 📂 data                # Handles data operations
-│   ├── 📂 dataclasses     # Data models for API & database objects
-│   │   ├── Character.kt
-│   │   ├── CharacterList.kt
-│   │   ├── UserCharacter.kt
-│   │
-│   ├── 📂 retrofit        # Retrofit classes for API integration
-│   │   ├── CharacterRepository.kt
-│   │   ├── CharacterService.kt
-│   │
-│   ├── 📂 room            # Room Database classes & DAO
-│       ├── RickAndMortyDatabase.kt
-│       ├── UserCharacterDao.kt
-│       ├── UserCharacterRepository.kt
-│
-├── 📂 navigation          # Navigation logic
-│   ├── BottomNavigationBar.kt
-│   ├── ScreenNavigation.kt
-│
-├── 📂 screens             # Main screens of the application
-│
-├── 📂 ui/theme            # Theming and styles for the app
-│
-├── MainActivity.kt        # Entry point of the application
-``` 
 
 - Character List Screen
 Fetches and displays a list of characters from the API.
