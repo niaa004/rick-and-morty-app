@@ -1,5 +1,5 @@
 ## Introduction
-This is Android application which fetches data from the Rick and Morty API.  
+Android Programming Exam 
 
 ## Technologies & Frameworks
 - Language: Kotlin
