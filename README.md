@@ -2,15 +2,15 @@
 This is Android application which fetches data from the Rick and Morty API.  
 
 ## Technologies & Frameworks
-Language: Kotlin
-UI: Jetpack Compose
-Architecture: MVVM (Model-View-ViewModel)
-Data Handling: Room Database (Local Storage)
-API Integration: Retrofit (Network Requests)
-API Documentation & Testing: Swagger / OpenAPI
-State Management: ViewModel & LiveData
+- Language: Kotlin
+- UI: Jetpack Compose
+- Architecture: MVVM (Model-View-ViewModel)
+- Data Handling: Room Database (Local Storage)
+- API Integration: Retrofit (Network Requests)
+- API Documentation & Testing: Swagger / OpenAPI
+- State Management: ViewModel & LiveData
 
-
+## Features 
 - Character List Screen
 Fetches and displays a list of characters from the API.
 Implements pagination for smooth navigation between pages.
